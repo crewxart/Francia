@@ -8,6 +8,8 @@
           <field name="name"/>
           <field name="value"/>
           <field name="value2"/>
+          <field name="description"/>
+
         </tree>
       </field>
     </record>
@@ -32,8 +34,10 @@
     </record>
 
     <menuitem name="prueba" id="prueba.menu_root"/>}
+    <menuitem name="Menu 1" id="prueba.menu_1" parent="prueba.menu_root"/>
+
     <menuitem name="List" id="prueba.menu_1_list" parent="prueba.menu_1"
-              action="prueba.action_window"/>
+      action="prueba.action_window"/>
 
 </data>
 </odoo>
