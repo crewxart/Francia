@@ -28,3 +28,10 @@ class producto(models.Model):
 #     @api.depends('value')
 #     def _value_pc(self):
 #         self.value2 = float(self.value) / 100
+
+class detalle(models.Model):
+    _name= 'producto.detalle'
+    stock = fields.Float()
+    variacionPN = fields.Float()
+    variacionPV = fields.Float()
+    estadoProducto= fields.Char()
