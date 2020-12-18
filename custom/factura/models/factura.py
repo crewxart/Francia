@@ -18,5 +18,6 @@ class factura(models.Model):
 
     ### Producto
     producto_id = fields.Many2one('inventario.producto', string="Producto")
-
+    #
+    descripcion = 
 
