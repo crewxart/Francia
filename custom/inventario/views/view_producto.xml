@@ -1,6 +1,6 @@
 <odoo>
 <data>
- <record model="ir.ui.view" id="inventario.list">
+ <record model="ir.ui.view" id="producto_list">
       <field name="name">inventario list</field>
       <field name="model">inventario.producto</field>
       <field name="arch" type="xml">
@@ -13,7 +13,7 @@
         </tree>
       </field>
   </record>
-  <record model="ir.ui.view" id="inventario.list">
+  <record model="ir.ui.view" id="producto_form">
       <field name="name">inventario list</field>
       <field name="model">inventario.producto</field>
       <field name="arch" type="xml">
@@ -30,9 +30,42 @@
         </form>
       </field>
   </record>
+
+  <record model="ir.ui.view" id="categoria_list">
+      <field name="name">inventario list</field>
+      <field name="model">inventario.categoria</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" string="Nombre"/>
+          <field name="categoria_ids" string="Ids"/>
+        </tree>
+      </field>
+  </record>
+  <record model="ir.ui.view" id="categoria_form">
+      <field name="name">inventario list</field>
+      <field name="model">inventario.categoria</field>
+      <field name="arch" type="xml">
+        <form>
+        <sheet>
+        <group>
+          <field name="name" string="Nombre"/>
+          <field name="categoria_ids" string="Ids"/>
+
+        </group>
+        </sheet>
+
+        </form>
+      </field>
+  </record>
+
   <record model="ir.actions.act_window" id="inventario.action_window">
       <field name="name">inventario window</field>
       <field name="res_model">inventario.producto</field>
+      <field name="view_mode">tree,form</field>
+  </record>
+  <record model="ir.actions.act_window" id="action_123">
+      <field name="name">inventario window</field>
+      <field name="res_model">inventario.categoria</field>
       <field name="view_mode">tree,form</field>
   </record>
 
@@ -67,6 +100,6 @@
  <menuitem name="Inventario2" id="inventario.menu_1" parent="inventario.menu_root" action="inventario.action_window" />
 
 
- <menuitem name="Inventario2" id="inventario.menu_2" parent="inventario.menu_root" action="inventario.action_window"/>
+ <menuitem name="Inventario2" id="inventario.menu_2" parent="inventario.menu_root" action="action_123"/>
 </data>
 </odoo>
