@@ -96,10 +96,10 @@
       </field>
   </record>
 
- <menuitem name="inventario" id="inventario.menu_root"/>
- <menuitem name="Inventario2" id="inventario.menu_1" parent="inventario.menu_root" action="inventario.action_window" />
+ <menuitem name="Inventario" id="inventario.menu_root"/>
+ <menuitem name="Productos" id="inventario.menu_1" parent="inventario.menu_root" action="inventario.action_window" />
 
 
- <menuitem name="Inventario2" id="inventario.menu_2" parent="inventario.menu_root" action="action_123"/>
+ <menuitem name="Categorías" id="inventario.menu_2" parent="inventario.menu_root" action="action_123"/>
 </data>
 </odoo>
