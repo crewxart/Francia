@@ -21,7 +21,9 @@
         "-d",
         "project",
         "-u",
-        "inventario"]
+        "inventario",
+        "-u",
+        "factura"]
       }
     ]
   }

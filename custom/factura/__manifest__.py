@@ -25,7 +25,8 @@ poder gestionar las facturas de compra de la organización y ver sus estados.
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+         'security/ir.model.access.csv',
+         'views/view_factura.xml'
         #'views/views.xml',
         #'views/templates.xml',
     ],
