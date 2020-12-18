@@ -35,3 +35,4 @@ class detalle(models.Model):
     variacionPN = fields.Float()
     variacionPV = fields.Float()
     estadoProducto= fields.Char()
+    
