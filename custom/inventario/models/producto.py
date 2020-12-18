@@ -6,6 +6,11 @@ from odoo import models, fields, api
 class Categoria(models.Model):
     _name = 'inventario.categoria'
     name = fields.Char(string="Nombre", required= True)
+    categoria_ids= fields.One2many(
+        'inventario.producto',
+        'categoria_id',
+        string="Categorías"
+    )
 
 class producto(models.Model):
     _name = 'inventario.producto'
