@@ -1,2 +1,4 @@
 
 *.pyc
+odoo-venv/bin/python
+odoo-venv/bin/python3
